@@ -14,15 +14,15 @@ const NETWORK_TYPE = typeforce.compile({
     },
 });
 const BITCOIN = {
-    messagePrefix: '\x18Bitcoin Signed Message:\n',
-    bech32: 'bc',
+    messagePrefix: '\x18DarkNet Signed Message:\n',
+    bech32: 'ph',
     bip32: {
-        public: 0x0488b21e,
-        private: 0x0488ade4,
+        public: 0x022d2533,
+        private: 0x0221312b,
     },
-    pubKeyHash: 0x00,
-    scriptHash: 0x05,
-    wif: 0x80,
+    pubKeyHash: 0x28,
+    scriptHash: 0x0d,
+    wif: 0xd4,
 };
 const HIGHEST_BIT = 0x80000000;
 const UINT31_MAX = Math.pow(2, 31) - 1;
